@@ -38,6 +38,15 @@
     #publications li {
         line-height: 1.5; /* Adjust the value to control the spacing */
     }
+    .image-container {
+            display: flex; /* Use flexbox to place images side by side */
+        }
+
+        .scaled-image {
+            width: 50%; /* Adjust the width as needed for your layout */
+            height: auto; /* Maintain the image's aspect ratio */
+        }
+        
     </style>
 </head>
 <body>
@@ -109,7 +118,10 @@ Anomaly Detection</a> The project aimed at enhancing graph anomaly detection. I 
         <li><strong>Science Summit at the 79 United Nation General Assembly:</strong> Open Science comprehensive overviews - Septeember 2023</li>
         <li><strong>Central South University Academic Seminar:</strong> How to conduct a scientific research - April 2023</li> 
     </ul>
-        <img src="csu_sem1.jpg" alt="Description of the image">
+         <div class="image-container">
+        <img src="csu_sem1.jpg" alt="Description of the first image" class="scaled-image">
+        <img src="csu_sem2.jpg" alt="Description of the second image" class="scaled-image">
+    </div>
     </section>
 
     <section id="extras">
